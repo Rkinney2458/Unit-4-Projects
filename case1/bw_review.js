@@ -63,7 +63,7 @@ function lightStars(e) {
       for (var i = starNumber; i < 5; i++) {
             stars[i].src = "bw_star.png";
       }
-      //states that the value of the element with the id of rating will be given the value of the starNumber concatenated with the string of star(s).
+      // the value of the element with the id of rating will be given the value of the starNumber concatenated with the string of star(s).
       document.getElementById("rating").value = starNumber + " star(s)";
       //The block below adds an event listener that listens for the mouseleave event. Once the event occurs, the anonymus function which removes the event listener will be triggered.
       e.target.addEventListener("mouseleave", function () {
@@ -71,7 +71,7 @@ function lightStars(e) {
       });
 }
 function turnOffStars(e) {
-   // variable with the name of stars which is given the value of the span#stars imgs.
+   // Variable with the name of stars which is given the value of the span#stars imgs.
    var stars = document.querySelectorAll("span#stars img");
    //for loop that will continue to run as long as the i variable value if less than the stars length. The line within changes the image of the stars to the bw_star.png image.
    for (var i = 0; i < stars.length; i++) {
@@ -83,9 +83,9 @@ function turnOffStars(e) {
 //function with the name of updateCount
 function updateCount() {
    var commentText = document.getElementById("comment").value;
-   //charCount which is assigned the value of the characters within commentText box.
+   //charCount which is assigned the value of the characters within  commentText box.
    var charCount = countCharacters(commentText);
-   //variable with the name of wordCountBox that is given the value of the element with an id of wordCount.
+   //Variable with the name of wordCountBox that is given the value of the element with an id of wordCount.
    var wordCountBox = document.getElementById("wordCount");
    wordCountBox.value = charCount + "/1000"
    //the if statements below states that for any charCount value above 1000, the text color and background color will change to the white and red. If it is not above 1000, the text color and background color will remain white and black.
@@ -98,7 +98,6 @@ function updateCount() {
    }
 }
 
-  
   
   
 /*=================================================================*/
